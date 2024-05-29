@@ -23,12 +23,12 @@ This is a simple to-do list application built with Laravel. It allows users to c
    
 ## Configure the SQLite database:  
 ## Open the .env file and update the database settings: 
-  DB_CONNECTION=sqlite
-  DB_DATABASE=database/database.sqlite
+    DB_CONNECTION=sqlite
+     DB_DATABASE=database/database.sqlite
 
 ## Run the database migrations: sh
     php artisan migrate
 
 ## Serve the application:sh
-  php artisan serve
+    php artisan serve
  
