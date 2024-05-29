@@ -1,0 +1,48 @@
+{{-- <!DOCTYPE html>
+<html>
+<head>
+    <title>Create Task</title>
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+</head>
+<body> --}}
+
+    @extends('layouts.app')
+
+@section('content')
+
+    <div class="container">
+        <h1>Create New Task</h1>
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        <form action="{{ route('tasks.store') }}" method="POST">
+            @csrf
+            <div class="form-group">
+                <label for="title">Title:</label>
+                <input type="text" class="form-control" name="title" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea class="form-control" name="description"></textarea>
+            </div>
+            <div class="form-group" style="padding-bottom: 15px">
+                <label for="status">Status:</label>
+                <select class="form-control" name="status">
+                    <option value="0">Incomplete</option>
+                    <option value="1">Completed</option>
+                </select>
+            </div>
+            <button  type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    @endsection
+
+{{-- </body>
+</html> --}}
