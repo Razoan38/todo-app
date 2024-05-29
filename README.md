@@ -18,5 +18,17 @@ This is a simple to-do list application built with Laravel. It allows users to c
 ## Install dependencies: sh
     composer install
     
-## Set up environment variables:
-  sh  cp .env.example .env
+## Set up environment variables: sh  
+   cp .env.example .env
+   
+## Configure the SQLite database:  
+## Open the .env file and update the database settings: 
+  DB_CONNECTION=sqlite
+  DB_DATABASE=database/database.sqlite
+
+## Run the database migrations: sh
+    php artisan migrate
+
+## Serve the application:sh
+  php artisan serve
+ 
