@@ -12,7 +12,9 @@ This is a simple to-do list application built with Laravel. It allows users to c
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/todo-app.git
+   git clone https://github.com/Razoan38/todo-app.git
    cd todo-app
 
+##Install dependencies: sh
+    composer install
 
