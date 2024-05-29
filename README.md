@@ -19,7 +19,7 @@ This is a simple to-do list application built with Laravel. It allows users to c
     composer install
     
 ## Set up environment variables: sh  
-   cp .env.example .env
+    cp .env.example .env
    
 ## Configure the SQLite database:  
 ## Open the .env file and update the database settings: 
